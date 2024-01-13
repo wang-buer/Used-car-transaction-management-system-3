@@ -1,81 +1,89 @@
-# 基于SSM的二手交易管理系统3
+# 二手车交易管理系统3
 
 ## 获取方式
 
-下方扫一扫关注后，后台回复关键词：**二手**，查看导入教程视频、sql脚本和源码等
+下方扫一扫关注后，后台回复关键词：**二手车**，查看导入教程视频、sql脚本和源码等
 
  ![](https://www.codeshop.fun/Typora-Images/202205281253739.png)
 
 ## 1、项目介绍
 
-二手交易管理系统3拥有两个角色，分别为管理员和用户，具体功能如下：
+二手车交易管理系统拥有两种角色
 
-管理员：物品类型管理、物品管理、订单管理、用户管理
+管理员：车辆管理、用户管理、回复管理、类别管理、品牌管理、评估查询、售后查询、需求查询、询价查询、预约管理等
 
-用户：浏览物品，购买物品，搜索物品，发布物品，查看、修改个人信息，评论物品等
+用户：注册登录、预约车辆、联系平台、发布买车需求、发布车辆出售信息、车辆询价、查看买车需求、分类查询等
 
 
 ## 2、项目技术
 
-后端框架：SSM（Spring、SpringMVC、Mybatis）
+后端框架： Servlet、mvc模式
 
-前端框架：Bootstrap、jsp、css、JavaScript、JQuery
+前端技术：jsp、css、JavaScript、JQuery
 
 ## 3、开发环境
 
-- JAVA版本：JDK1.8，其它版本理论上可以
-- IDE类型：IDEA、Eclipse、Myeclipse都可以。推荐IDEA与Eclipse
-- tomcat版本：Tomcat 7.x、8.x、9.x、10.x版本均可
-- 数据库版本：MySql 5.x
+- JAVA版本：JDK1.8
+- IDE类型：IDEA、Eclipse都可运行
+- tomcat版本：Tomcat 7-10版本均可
+- 数据库类型：MySql（5.x和8.x版本都可） 
+- maven项目：否
 - 硬件环境：Windows 或者 Mac OS
-- maven版本：无要求
 
 
 ## 4、功能介绍
 
-### 4.1 登录
+### 4.1 登录注册
 
-![用户登录](https://www.codeshop.fun/Typora-Images/20220509151551.jpg)
+![后台登录](https://www.codeshop.fun/Typora-Images/202208201126411.jpg)
 
-![管理员登录](https://www.codeshop.fun/Typora-Images/20220509151540.jpg)
+![用户-注册](https://www.codeshop.fun/Typora-Images/202208201126412.jpg)
 
-用户和管理员可以分别通过以上两个界面登录至系统
+### 4.2前端 模块
 
-### 4.2 首页
+![前端-首页](https://www.codeshop.fun/Typora-Images/202208201126937.jpg)
 
-![首页](https://www.codeshop.fun/Typora-Images/20220509151634.jpg)
+![前端-分类查询](https://www.codeshop.fun/Typora-Images/202208201126082.jpg)
 
-用户可以在首页分类查看不同的商品，还可以通过搜索名称筛选物品
+![前端-车辆详情](https://www.codeshop.fun/Typora-Images/202208201127115.jpg)
 
-### 4.3 商品详情
+![前端-买车需求查看](https://www.codeshop.fun/Typora-Images/202208201127746.jpg)
 
-![商品详情](https://www.codeshop.fun/Typora-Images/20220515104033.jpg)
+### 4.3 用户模块
 
-商品详情中，用户可以联系卖家，也可以直接购买商品，还可以评论商品。商品信息有图片展示、名称、价格等信息
+![用户-预约车辆](https://www.codeshop.fun/Typora-Images/202208201127017.jpg)
 
-### 4.4 用户功能模块
+![用户-联系平台](https://www.codeshop.fun/Typora-Images/202208201127190.jpg)
 
-![用户个人界面](https://www.codeshop.fun/Typora-Images/20220509151837.jpg)
+![用户-发布买车需求](https://www.codeshop.fun/Typora-Images/202208201127994.jpg)
 
-![用户修改个人信息](https://www.codeshop.fun/Typora-Images/20220509151845.jpg)
+![用户-发布车辆出售信息](https://www.codeshop.fun/Typora-Images/202208201127437.jpg)
 
-![用户注册](https://www.codeshop.fun/Typora-Images/20220509151849.jpg)
+![](https://www.codeshop.fun/Typora-Images/202208201127983.jpeg)
 
-![用户发布商品](https://www.codeshop.fun/Typora-Images/20220509151852.jpg)
+### 4.4 管理员模块
 
-用户可以发布商品、查看和修改、注册个人信息，个人信息界面有自己发布的商品记录和订单记录，还可以查看收到的评论等信息
+![管理员-预约管理](https://www.codeshop.fun/Typora-Images/202208201127213.jpg)
 
-### 4.5  管理员功能模块
+![管理员-用户管理](https://www.codeshop.fun/Typora-Images/202208201127426.jpg)
 
-![管理员-订单管理](https://www.codeshop.fun/Typora-Images/20220509152019.jpg)
+![管理员-询价查询](https://www.codeshop.fun/Typora-Images/202208201127750.jpg)
 
-![管理员-物品管理](https://www.codeshop.fun/Typora-Images/20220509152022.jpg)
+![管理员-需求查询](https://www.codeshop.fun/Typora-Images/202208201127151.jpg)
 
-![管理员-物品类型管理](https://www.codeshop.fun/Typora-Images/20220509152026.jpg)
+![管理员-售后查询](https://www.codeshop.fun/Typora-Images/202208201127169.jpg)
 
-管理员你可以对物品、订单、用户、类型等进行查看、删除等操作
+![管理员-确认查询](https://www.codeshop.fun/Typora-Images/202208201127341.jpg)
 
-### 4.5 文档目录
+![管理员-评估查询](https://www.codeshop.fun/Typora-Images/202208201127656.jpg)
 
-![论文目录](https://www.codeshop.fun/Typora-Images/202211201209716.jpg)
+![管理员-品牌管理](https://www.codeshop.fun/Typora-Images/202208201127975.jpg)
+
+![管理员-轮播图管理](https://www.codeshop.fun/Typora-Images/202208201127920.jpg)
+
+![管理员-类别管理](https://www.codeshop.fun/Typora-Images/202208201127901.jpg)
+
+![管理员-回复管理](https://www.codeshop.fun/Typora-Images/202208201127360.jpg)
+
+![管理员-管理员管理](https://www.codeshop.fun/Typora-Images/202208201128580.jpg)![管理员-车辆管理](https://www.codeshop.fun/Typora-Images/202208201128475.jpg)
 
